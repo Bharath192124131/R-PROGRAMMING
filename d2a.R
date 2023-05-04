@@ -1,0 +1,7 @@
+a <- c(1, 2, 3, 4, 5, 6, 7, 8, 9)
+b <- c(10, 11, 12, 13, 14, 15, 16, 17, 18)
+mat1 <- matrix(a, nrow = 3, ncol = 3, byrow = TRUE)
+mat2 <- matrix(b, nrow = 3, ncol = 3, byrow = TRUE)
+arr <- array(c(mat1, mat2), dim = c(3, 3, 2))
+print(arr[2, , 2])
+print(arr[3, 3, 1])
